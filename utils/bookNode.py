@@ -8,6 +8,10 @@ class Book:
         self.title = title
         self.author = author
 
+    #string override to make the output data readable
+    def __str__(self):
+        return f'"{self.title}" by {self.author} (ISBN: {self.isbn})'
+
 #a class of BookNode objects that contain a data value
 #and a references to the next book in the list
 #or none if there's no next Book

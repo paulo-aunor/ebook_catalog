@@ -34,7 +34,7 @@ class Catalog:
             current_book = current_book.next
 
         #return the string format
-        return "|--|" + "<-->".join(book_strings) + "--|"
+        return "\n".join(book_strings)
 
 
     #method to add a book to the Catalog, grouped by author
